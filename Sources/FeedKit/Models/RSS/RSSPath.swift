@@ -193,4 +193,8 @@ enum RSSPath: String {
     case rssChannelItemMediaGroupMediaRating                    = "/rss/channel/item/media:group/media:rating"
     case rssChannelItemMediaGroupMediaContent                   = "/rss/channel/item/media:group/media:content"
     
+    // MARK: Torrent
+    case rssChannelItemTorrentLink                              = "/rss/channel/item/torrent/link"
+    case rssChannelItemTorrentLenght                            = "/rss/channel/item/torrent/contentLength"
+    case rssChannelItemTorrentPubDate                           = "/rss/channel/item/torrent/pubDate"
 }

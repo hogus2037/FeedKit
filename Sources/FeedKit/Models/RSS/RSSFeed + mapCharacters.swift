@@ -169,6 +169,13 @@ extension RSSFeed {
         case .rssChannelItemMediaScenesMediaSceneSceneDescription:  self.items?.last?.media?.mediaScenes?.last?.sceneDescription    = self.items?.last?.media?.mediaScenes?.last?.sceneDescription?.appending(string) ?? string
         case .rssChannelItemMediaScenesMediaSceneSceneStartTime:    self.items?.last?.media?.mediaScenes?.last?.sceneStartTime      = string.toDuration()
         case .rssChannelItemMediaScenesMediaSceneSceneEndTime:      self.items?.last?.media?.mediaScenes?.last?.sceneEndTime        = string.toDuration()
+        // MARK: - Torrent
+        case .rssChannelItemTorrentLink:
+            self.items?.last?.torrent?.link = self.items?.last?.torrent?.link?.appending(string) ?? string
+        case .rssChannelItemTorrentLenght:
+            self.items?.last?.torrent?.length = Int64(string)
+        case .rssChannelItemTorrentPubDate:
+            self.items?.last?.torrent?.pubDate = string.toPermissiveDate()
         default: break
         }
         

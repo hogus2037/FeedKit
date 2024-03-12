@@ -155,6 +155,8 @@ public class RSSFeedItem {
     /// that date.
     public var pubDate: Date?
     
+    public var torrent: TorrentNamespace?
+    
     /// The RSS channel that the item came from.
     /// 
     /// <source> is an optional sub-element of <item>.
@@ -215,7 +217,8 @@ extension RSSFeedItem: Equatable {
             lhs.media == rhs.media &&
             lhs.pubDate == rhs.pubDate &&
             lhs.source == rhs.source &&
-            lhs.title == rhs.title
+            lhs.title == rhs.title &&
+            lhs.torrent == rhs.torrent
     }
     
 }

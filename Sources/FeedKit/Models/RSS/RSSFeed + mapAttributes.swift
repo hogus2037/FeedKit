@@ -493,6 +493,13 @@ extension RSSFeed {
                 
             }
 
+        case .rssChannelItemTorrentLink,
+                .rssChannelItemTorrentLenght,
+                .rssChannelItemTorrentPubDate:
+            if self.items?.last?.torrent == nil {
+                self.items?.last?.torrent = TorrentNamespace()
+            }
+            
             
         default: break
             

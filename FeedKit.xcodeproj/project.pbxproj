@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		787503DD2BA02B63001C2D22 /* TorrentNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787503DC2BA02B63001C2D22 /* TorrentNamespace.swift */; };
 		A01F67A01D1692B20038910F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F679C1D16922D0038910F /* ViewController.swift */; };
 		A01F67A11D16931A0038910F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01F67991D1691510038910F /* Main.storyboard */; };
 		A09AFB3A1EEFDFF40076ACC7 /* AtomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09AFB2E1EEFDFF40076ACC7 /* AtomTests.swift */; };
@@ -571,6 +572,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		787503DC2BA02B63001C2D22 /* TorrentNamespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentNamespace.swift; sourceTree = "<group>"; };
 		A01F679A1D1691510038910F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A01F679C1D16922D0038910F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A0370EB91CEF9D5A009583A3 /* FeedKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeedKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -805,6 +807,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		787503DB2BA02B1D001C2D22 /* Torrent */ = {
+			isa = PBXGroup;
+			children = (
+				787503DC2BA02B63001C2D22 /* TorrentNamespace.swift */,
+			);
+			path = Torrent;
+			sourceTree = "<group>";
+		};
 		A09C85271CE9B0C300D20CAB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -991,6 +1001,7 @@
 		A0F6B7E51F6E6E9600220625 /* Namespaces */ = {
 			isa = PBXGroup;
 			children = (
+				787503DB2BA02B1D001C2D22 /* Torrent */,
 				A0F6B7E61F6E6E9600220625 /* Content */,
 				A0F6B7E81F6E6E9600220625 /* Dublin Core */,
 				A0F6B7EA1F6E6E9600220625 /* iTunes */,
@@ -1974,6 +1985,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F6B96A1F6E6EBB00220625 /* MediaCredit.swift in Sources */,
+				787503DD2BA02B63001C2D22 /* TorrentNamespace.swift in Sources */,
 				A0F6B9651F6E6EBB00220625 /* iTunesSubCategory.swift in Sources */,
 				A0F6B9441F6E6EBB00220625 /* Array + Equatable.swift in Sources */,
 				A0F6B9521F6E6EBB00220625 /* AtomFeedEntryContributor.swift in Sources */,
